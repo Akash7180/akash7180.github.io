@@ -25,13 +25,16 @@ menu_item.forEach((item) => {
 });
 
 const downloadBtn = document.getElementById("download-cv-btn");
-downloadBtn.addEventListener("click", ()=>{
-	const fileUrl ="https://drive.google.com/file/d/1LWj7DzLfVOhm3q-gW5Wf01KE5s8BJqgZ/view?usp=share_link";
-	const downloadLink = document.createElement("a");
-	downloadLink.href = fileUrl;
-	downloadLink.download = "Akash-Thiruveedula-Resume (2).pdf";
-	document.body.appendChild(downloadLink);
-	downloadLink.click();
-	document.body.removeChild(downloadLink);
+
+downloadBtn.addEventListener("click", () => {
+    const fileUrl = "Akash-Thiruveedula-Resume (2).pdf"; // Replace with the actual URL of your PDF
+    const downloadLink = document.createElement("a");
+    downloadLink.href = fileUrl;
+    downloadLink.download = "Akash-Thiruveedula-Resume.pdf"; // The name you want the downloaded file to have
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+});
+
 
 });
