@@ -27,13 +27,15 @@ menu_item.forEach((item) => {
 const downloadBtn = document.getElementById("download-cv-btn");
 
 downloadBtn.addEventListener("click", () => {
-    const fileUrl = "https://github.com/Akash7180/akash7180.github.io/raw/master/Akash-Thiruveedula-Resume%20(2).pdf"; // Your PDF URL
+    const fileUrl = "https://raw.githubusercontent.com/Akash7180/akash7180.github.io/master/Akash-Thiruveedula-Resume%20(2).pdf"; // Direct link to the raw file
     const downloadLink = document.createElement("a");
     downloadLink.href = fileUrl;
     downloadLink.download = "Akash-Thiruveedula-Resume.pdf"; // The name you want the downloaded file to have
     document.body.appendChild(downloadLink);
     downloadLink.click();
     document.body.removeChild(downloadLink);
+});
+
 });
 
 });
