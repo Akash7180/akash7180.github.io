@@ -27,7 +27,7 @@ menu_item.forEach((item) => {
 const downloadBtn = document.getElementById("download-cv-btn");
 
 downloadBtn.addEventListener("click", () => {
-    const fileUrl = "Akash-Thiruveedula-Resume (2).pdf"; // Direct link to the raw file
+    const fileUrl = "https://akash7180.github.io/Akash-Thiruveedula-Resume%20(2).pdf";
     const downloadLink = document.createElement("a");
     downloadLink.href = fileUrl;
     downloadLink.download = "Akash-Thiruveedula-Resume.pdf"; // The name you want the downloaded file to have
